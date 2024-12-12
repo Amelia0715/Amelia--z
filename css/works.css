@@ -1,0 +1,154 @@
+.works-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    position: relative;
+}
+
+.back-button {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+    transform: rotate(90deg);
+}
+
+.arrow-left {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.arrow-left:before,
+.arrow-left:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    left: -2px;
+    transition: all 0.3s ease;
+}
+
+.arrow-left:before {
+    transform: rotate(-45deg);
+    top: -4px;
+}
+
+.arrow-left:after {
+    transform: rotate(45deg);
+    top: 4px;
+}
+
+.back-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotate(0deg);
+}
+
+.back-button:hover .arrow-left,
+.back-button:hover .arrow-left:before,
+.back-button:hover .arrow-left:after {
+    background: #00fffc;
+}
+
+.back-button:hover .back-text {
+    color: #00fffc;
+}
+
+.works-grid {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.work-item {
+    text-decoration: none;
+    color: inherit;
+    scroll-margin-top: 100px;
+}
+
+.work-content {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.work-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.work-info h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    background: linear-gradient(45deg, #00fffc, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.work-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.page-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+
