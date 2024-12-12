@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -92,19 +91,6 @@ body {
     transform: translateY(-2px);
     color: #00FFFC;
 }
-
-
-@media (max-width: 768px) {
-    .glitch {
-        font-size: 2em !important;
-    }
-
-    .glitch:first-child:hover {
-        font-size: 2.4em !important;
-    }
-}
-
-
 .typing-text {
     font-size: 1.5em;
     margin: 20px 0;
@@ -141,47 +127,6 @@ body {
     margin-bottom: 10px;
     animation: floatArrow 2s ease-in-out infinite;
 }
-
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes progress {
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes scrollArrow {
-    0% {
-        transform: rotate(45deg) translate(-20px, -20px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(45deg) translate(0, 0);
-        opacity: 0;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .glitch {
-        font-size: 3.5em;
-    }
-
-    .typing-text {
-        font-size: 1.2em;
-    }
-}
-
 
 .banner-image {
     position: absolute;
@@ -767,8 +712,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px;
     z-index: 10;
-    opacity: 0.7;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .home-title:hover {
@@ -964,38 +908,40 @@ html {
     object-fit: cover;
 }
 
-@font-face {
-    font-family: 'TAN-SOMETLMES';
-    src: url('font/TAN\ -\ SOMETIMES.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-
-@font-face {
-    font-family: 'alingkar';
-    src: url('font/alingkar.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+@keyframes progress {
+    to {
+        width: 100%;
+    }
 }
 
-@font-face {
-    font-family: 'ENGR';
-    src: url('font/ENGR.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@keyframes scrollArrow {
+    0% {
+        transform: rotate(45deg) translate(-20px, -20px);
+        opacity: 0;
+    }
 
-@font-face {
-    font-family: 'sylfaen';
-    src: url('font/sylfaen.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+    50% {
+        opacity: 1;
+    }
 
-@font-face {
-    font-family: 'alize';
-    src: url('font/alize.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    100% {
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    .glitch {
+        font-size: 3.5em;
+    }
+
+    .typing-text {
+        font-size: 1.2em;
+    }
 }
