@@ -699,7 +699,7 @@ body {
     position: absolute;
     top: 40px;
     left: 60px;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
@@ -789,20 +789,6 @@ body {
     font-size: 1.2em;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 1024px) {
-
-    .project-section,
-    .project-section.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .section-image,
-    .section-content {
-        flex: 0 0 100%;
-    }
 }
 
 .banner-right-image {
