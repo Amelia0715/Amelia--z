@@ -177,13 +177,6 @@ body {
     color: #00fffc;
 }
 
-@media (max-width: 768px) {
-    .main-nav {
-        top: 20px;
-        right: 20px;
-        gap: 15px;
-    }
-
     .nav-item {
         font-size: 0.9em;
         padding: 6px 12px;
@@ -210,7 +203,7 @@ body {
 
 .intro-text p:first-child {
     font-family: 'ENGR', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
     font-weight: 300;
     letter-spacing: 2px;
